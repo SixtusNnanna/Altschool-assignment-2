@@ -91,6 +91,7 @@ body > p:first-child, body p+p, .header{
     width: 38.667px;
     height: 40px;
     margin-top: 30px;
+    margin-bottom: 40px;
   }
   h1 {
     padding-block: 14px 2px;
@@ -183,7 +184,7 @@ body > p:first-child, body p+p, .header{
     text-decoration: none;
   }
   div.policy {
-    margin-top: 60px;
+    margin-top: 54px;
     padding-inline: 29px 30px;
     color: #000;
     font-size: 0.873rem;
@@ -207,7 +208,7 @@ body > p:first-child, body p+p, .header{
   }
   .main{
     display: flex;
-    justify-content: center;
+    
     max-width: 1440px;
     max-height: 840px;
     border: 1px solid;
@@ -222,6 +223,13 @@ div.introduction {
   flex-shrink: 0;
   margin-block: 205px 360px;
 }
+div.introduction p {
+  margin-right: 120px;
+  color: var(--CL-Grey, #737373);
+  font-family: Brown;
+  font-weight: 400;
+  line-height: 25px; 
+  }
 div.registeration_form {
   max-width: 580px;
   max-height: 679px;
@@ -234,6 +242,10 @@ div.registeration_form {
   font-size: 1rem;
   line-height: normal;
 }
+.image{
+  width: 77.333px;
+  height: 80px;
+}
 h1 {
   padding-block: 50px 20px;
   color: #000b0a;
@@ -241,13 +253,7 @@ h1 {
   font-weight: 700;
   letter-spacing: -0.8px;
 }
-div.introduction p {
-margin-right: 120px;
-color: var(--CL-Grey, #737373);
-font-family: Brown;
-font-weight: 400;
-line-height: 25px; 
-}
+
 form {
   display: flex;
   flex-direction: column;
@@ -268,6 +274,18 @@ select {
 
   border-radius: 2px;
   border: 1px solid #f0f0f0;
+}
+input:hover,select:hover{
+  border: 2px solid #2ec4b6;
+}
+input#tolu{
+  border: 2px solid #2ec4b6;
+}
+input#tolu:hover{
+  border:2px solid #f0f0f0;
+}
+button:hover{
+  border: 2px solid;
 }
 select#activity,
 input#passwd {
